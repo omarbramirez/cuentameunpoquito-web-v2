@@ -1,0 +1,54 @@
+body {
+  font-family: 'Archivo Regular', sans-serif;
+}
+p{
+  margin-bottom: 10px;
+  color: #3c3c3b;
+}
+
+.thumbnail{
+  width: 350px;
+}
+.link{
+
+  cursor: auto;
+cursor: pointer;
+color: #1c75bc;
+}
+.link:hover{
+  color: #73bbe9;
+}
+.post-description{
+  margin-top:10px;
+  width: 400px;
+  text-align: left; 
+}
+.date{
+  color: #e52a2f;
+}
+
+a{
+  color: #1c75bc;
+  text-decoration: none;
+}
+a:hover{
+  color: #73bbe9;
+  text-decoration: none;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+}
+li{
+  margin: 0px 5px 0px 5px;
+}
+h2{
+  margin: 10px 0px 10px 0px;
+  font-weight: bold;
+}
+h3{
+  margin: 5px 0px 5px 0px;
+  color: #9d9d9c;
+}
