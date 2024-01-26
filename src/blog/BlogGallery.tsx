@@ -2,7 +2,6 @@ import React from 'react';
 
 import { format } from 'date-fns';
 import { es } from 'date-fns/locale';
-import { capitalize } from 'lodash';
 import Link from 'next/link';
 
 import { Pagination, IPaginationProps } from '../pagination/Pagination';
@@ -24,9 +23,7 @@ const BlogGallery = (props: IBlogGalleryProps) => (
             </Link>
             <p className="post-description">{elt.description}</p>
             <p className="date">
-              {capitalize(
-                format(new Date(elt.date), 'LLL d, yyyy', { locale: es })
-              )}
+              {format(new Date(elt.date), 'LLL d, yyyy', { locale: es })}
             </p>
           </div>
           <div className="text-right">

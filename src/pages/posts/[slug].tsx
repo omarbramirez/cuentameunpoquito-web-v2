@@ -2,7 +2,6 @@ import React from 'react';
 
 import { format } from 'date-fns';
 import { es } from 'date-fns/locale';
-import { capitalize } from 'lodash';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
 import { Content } from '../../content/Content';
@@ -42,8 +41,7 @@ const DisplayPost = (props: IPostProps) => (
       {props.title}
     </h1>
     <div className="text-center text-sm mb-8">
-      {capitalize(format(new Date(props.date), 'LLLL d, yyyy', { locale: es }))}
-      ;
+      {format(new Date(props.date), 'LLLL d, yyyy', { locale: es })};
     </div>
 
     <Content>
