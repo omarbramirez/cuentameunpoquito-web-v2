@@ -46,7 +46,7 @@ export const getStaticProps: GetStaticProps<
 
   const pages = convertTo2D(posts, AppConfig.pagination_size);
   const currentPage = Number(params!.page.replace('pagina', ''));
-  const currentIndex = currentPage - 1;
+  // const currentIndex = currentPage - 1;
 
   const pagination: IPaginationProps = {};
 
